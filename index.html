@@ -7,19 +7,19 @@
 
 <body>
 	
-	<script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_embed.js"></script>
-<div id="embedded-feed" style="height:600;width:100%;"></div>
+<script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_embed.js"></script>
+<div id="embedded-feed" style="height:400px;width:100%;"></div>
 <script>
-    yam.connect.embedFeed({
-        container: '#embedded-feed',
-        network: 'uea.ac.uk',
-        feedType: 'group',                // can be 'group', 'topic', or 'user'   
-        feedId: '33250197504',                     // feed ID from the instructions above
-        config: {
-             defaultGroupId: 33250197504   // specify default group id to post to
-        }
-    });   
+yam.connect.embedFeed({
+    container: '#embedded-feed',
+    network: 'uea.ac.uk',
+    feedType: 'group',
+    feedId: '33250197504',
+    objectProperties: { 
+        url: 'https://www.uea.ac.uk/',
+        type: 'page'
+    }
+});
 </script>
-	
 </body>
 </html>
