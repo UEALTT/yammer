@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yammer</title>
+</head>
+
+<body>
+	
+	<script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_embed.js"></script>
+<div id="embedded-feed" style="height:100%;width:100%;"></div>
+<script>
+    yam.connect.embedFeed({
+        container: '#embedded-feed',
+        network: 'uea.ac.uk',
+        feedType: 'group',                // can be 'group', 'topic', or 'user'   
+        feedId: '33250197504',                     // feed ID from the instructions above
+        config: {
+             defaultGroupId: 33250197504   // specify default group id to post to
+        }
+    });   
+</script>
+	
+</body>
+</html>
